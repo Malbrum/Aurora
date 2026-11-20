@@ -1,0 +1,31 @@
+{
+  "synthetic": true,
+  "expected_kind": "invoice_question",
+  "thread": [
+    {
+      "id": "m1",
+      "from": "kunde.syntetisk@example.invalid",
+      "to": ["post@roabadet.no"],
+      "subject": "Trekk etter oppsigelse",
+      "date": "2026-12-03T09:12:00+00:00",
+      "body": "Hei! Jeg sa opp medlemskapet i oktober og fikk bekreftet sluttdato 30.11. Nå ble jeg trukket 499 kr igjen 1. desember. Hvorfor? Mvh Test"
+    }
+  ],
+  "brp": {
+    "members": [
+      {"id": 9001, "customerNumber": "SYN-9001", "firstName": "Test", "lastName": "Syntetisk",
+       "email": "kunde.syntetisk@example.invalid", "familyMembers": []}
+    ],
+    "subscriptions": [
+      {"id": 7001, "customers": [9001], "start": "2025-03-01", "boundUntil": "2026-02-28", "debitedUntil": "2026-11-30",
+       "expirationDay": "2026-11-30", "statuses": [{"code": "TERMINATED"}], "product": {"name": "Bad og trening"},
+       "users": [9001], "payer": 9001, "price": {"amount": 49900, "currency": "NOK"}}
+    ],
+    "invoices": [
+      {"id": 5001, "customer": 9001, "number": "F-5001", "state": "PAID", "totalAmount": {"amount": 49900},
+       "rest": {"amount": 0}, "dueDate": "2026-11-01", "isCredited": false, "period": {"start": "2026-11-01", "end": "2026-11-30"}},
+      {"id": 5002, "customer": 9001, "number": "F-5002", "state": "PAID", "totalAmount": {"amount": 49900},
+       "rest": {"amount": 0}, "dueDate": "2026-12-01", "isCredited": false, "period": {"start": "2026-11-01", "end": "2026-11-30"}}
+    ]
+  }
+}

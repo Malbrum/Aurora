@@ -1,0 +1,9 @@
+.env.agentic
+.env
+.env.*
+!.env.agentic.example
+data/
+*.db
+__pycache__/
+.venv/
+.pytest_cache/
