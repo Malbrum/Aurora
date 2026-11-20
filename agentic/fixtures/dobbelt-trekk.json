@@ -1,0 +1,31 @@
+{
+  "synthetic": true,
+  "expected_kind": "invoice_question",
+  "thread": [
+    {
+      "id": "m1",
+      "from": "medlem.f@example.invalid",
+      "to": ["post@roabadet.no"],
+      "subject": "Trukket to ganger",
+      "date": "2026-11-04T12:10:00+00:00",
+      "body": "Hei, jeg ser på kontoutskriften at dere har trukket 499 kr to ganger 1. november. Er dette en feil? Hilsen Medlem F"
+    }
+  ],
+  "brp": {
+    "members": [
+      {"id": 9601, "customerNumber": "SYN-9601", "firstName": "Medlem", "lastName": "F",
+       "email": "medlem.f@example.invalid", "familyMembers": []}
+    ],
+    "subscriptions": [
+      {"id": 7601, "customers": [9601], "start": "2025-01-01", "boundUntil": "2025-12-31", "debitedUntil": "2026-11-30",
+       "expirationDay": null, "statuses": [{"code": "ACTIVE"}], "product": {"name": "Bad og trening"},
+       "users": [9601], "payer": 9601, "price": {"amount": 49900, "currency": "NOK"}}
+    ],
+    "invoices": [
+      {"id": 5601, "customer": 9601, "number": "F-5601", "state": "PAID", "totalAmount": {"amount": 49900},
+       "rest": {"amount": 0}, "dueDate": "2026-11-01", "isCredited": false, "period": {"start": "2026-11-01", "end": "2026-11-30"}},
+      {"id": 5602, "customer": 9601, "number": "F-5602", "state": "PAID", "totalAmount": {"amount": 49900},
+       "rest": {"amount": 0}, "dueDate": "2026-11-01", "isCredited": false, "period": {"start": "2026-11-01", "end": "2026-11-30"}}
+    ]
+  }
+}

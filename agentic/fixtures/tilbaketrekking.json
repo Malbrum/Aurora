@@ -1,0 +1,37 @@
+{
+  "synthetic": true,
+  "expected_kind": "withdrawal",
+  "thread": [
+    {
+      "id": "m1",
+      "from": "medlem.e@example.invalid",
+      "to": ["post@roabadet.no"],
+      "subject": "Oppsigelse",
+      "date": "2026-11-15T09:00:00+00:00",
+      "body": "Hei, jeg vil si opp medlemskapet mitt fra 31.12.2026. Mvh Medlem E"
+    },
+    {
+      "id": "m2",
+      "from": "medlem.e@example.invalid",
+      "to": ["post@roabadet.no"],
+      "subject": "Re: Oppsigelse",
+      "date": "2026-11-16T07:40:00+00:00",
+      "body": "Hei igjen. Glem forrige mail, jeg fikk ordnet det i appen selv i går. Ikke gjør noe. Mvh Medlem E"
+    }
+  ],
+  "brp": {
+    "members": [
+      {"id": 9501, "customerNumber": "SYN-9501", "firstName": "Medlem", "lastName": "E",
+       "email": "medlem.e@example.invalid", "familyMembers": []}
+    ],
+    "subscriptions": [
+      {"id": 7501, "customers": [9501], "start": "2023-01-01", "boundUntil": "2023-12-31", "debitedUntil": "2026-11-30",
+       "expirationDay": "2026-12-31", "statuses": [{"code": "TERMINATED"}], "product": {"name": "Bad og trening"},
+       "users": [9501], "payer": 9501, "price": {"amount": 49900, "currency": "NOK"}}
+    ],
+    "invoices": [
+      {"id": 5501, "customer": 9501, "number": "F-5501", "state": "PAID", "totalAmount": {"amount": 49900},
+       "rest": {"amount": 0}, "dueDate": "2026-11-01", "isCredited": false, "period": {"start": "2026-11-01", "end": "2026-11-30"}}
+    ]
+  }
+}

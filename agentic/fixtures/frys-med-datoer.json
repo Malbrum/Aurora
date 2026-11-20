@@ -1,0 +1,29 @@
+{
+  "synthetic": true,
+  "expected_kind": "freeze",
+  "thread": [
+    {
+      "id": "m1",
+      "from": "medlem.b@example.invalid",
+      "to": ["post@roabadet.no"],
+      "subject": "Frys av medlemskap",
+      "date": "2026-11-20T08:30:00+00:00",
+      "body": "Hei! Jeg skal være bortreist i jobb og vil fryse medlemskapet fra 1. januar til 28. februar 2027. Jeg finner ikke frys i appen. Kan dere ordne det? Mvh Medlem B"
+    }
+  ],
+  "brp": {
+    "members": [
+      {"id": 9201, "customerNumber": "SYN-9201", "firstName": "Medlem", "lastName": "B",
+       "email": "medlem.b@example.invalid", "familyMembers": []}
+    ],
+    "subscriptions": [
+      {"id": 7201, "customers": [9201], "start": "2026-02-01", "boundUntil": "2027-01-31", "debitedUntil": "2026-11-30",
+       "expirationDay": null, "statuses": [{"code": "ACTIVE"}], "product": {"name": "Trening"},
+       "users": [9201], "payer": 9201, "price": {"amount": 39900, "currency": "NOK"}, "freezes": []}
+    ],
+    "invoices": [
+      {"id": 5201, "customer": 9201, "number": "F-5201", "state": "PAID", "totalAmount": {"amount": 39900},
+       "rest": {"amount": 0}, "dueDate": "2026-11-01", "isCredited": false, "period": {"start": "2026-11-01", "end": "2026-11-30"}}
+    ]
+  }
+}
