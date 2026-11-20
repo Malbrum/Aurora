@@ -1,0 +1,29 @@
+{
+  "synthetic": true,
+  "expected_kind": "termination",
+  "thread": [
+    {
+      "id": "m1",
+      "from": "medlem.a@example.invalid",
+      "to": ["post@roabadet.no"],
+      "subject": "Oppsigelse av medlemskap",
+      "date": "2026-11-18T14:05:00+00:00",
+      "body": "Hei, jeg ønsker å si opp medlemskapet mitt. Jeg flytter og vil at det skal avsluttes 31. desember 2026. Får jeg bekreftelse? Hilsen Medlem A"
+    }
+  ],
+  "brp": {
+    "members": [
+      {"id": 9101, "customerNumber": "SYN-9101", "firstName": "Medlem", "lastName": "A",
+       "email": "medlem.a@example.invalid", "familyMembers": []}
+    ],
+    "subscriptions": [
+      {"id": 7101, "customers": [9101], "start": "2024-06-01", "boundUntil": "2025-05-31", "debitedUntil": "2026-11-30",
+       "expirationDay": null, "statuses": [{"code": "ACTIVE"}], "product": {"name": "Bad og trening"},
+       "users": [9101], "payer": 9101, "price": {"amount": 49900, "currency": "NOK"}, "binding": {"noticePeriodMonths": 1}}
+    ],
+    "invoices": [
+      {"id": 5101, "customer": 9101, "number": "F-5101", "state": "PAID", "totalAmount": {"amount": 49900},
+       "rest": {"amount": 0}, "dueDate": "2026-11-01", "isCredited": false, "period": {"start": "2026-11-01", "end": "2026-11-30"}}
+    ]
+  }
+}

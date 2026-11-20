@@ -1,0 +1,32 @@
+{
+  "synthetic": true,
+  "expected_kind": "termination",
+  "thread": [
+    {
+      "id": "m1",
+      "from": "forelder.c@example.invalid",
+      "to": ["post@roabadet.no"],
+      "subject": "Si opp barnets medlemskap",
+      "date": "2026-11-19T17:45:00+00:00",
+      "body": "Hei. Jeg er mor til Barn C (12 år) som har svømmemedlemskap hos dere. Hun har sluttet å bruke det, så vi vil si opp fra og med 31. januar 2027. Jeg betaler for det. Hilsen Forelder C"
+    }
+  ],
+  "brp": {
+    "members": [
+      {"id": 9301, "customerNumber": "SYN-9301", "firstName": "Forelder", "lastName": "C",
+       "email": "forelder.c@example.invalid",
+       "familyMembers": [{"id": 9302, "firstName": "Barn", "lastName": "C"}]},
+      {"id": 9302, "customerNumber": "SYN-9302", "firstName": "Barn", "lastName": "C",
+       "email": "", "familyMembers": [{"id": 9301, "firstName": "Forelder", "lastName": "C"}]}
+    ],
+    "subscriptions": [
+      {"id": 7301, "customers": [9301, 9302], "start": "2025-09-01", "boundUntil": "2026-08-31", "debitedUntil": "2026-11-30",
+       "expirationDay": null, "statuses": [{"code": "ACTIVE"}], "product": {"name": "Bad barn"},
+       "users": [9302], "payer": 9301, "price": {"amount": 24900, "currency": "NOK"}, "binding": {"noticePeriodMonths": 1}}
+    ],
+    "invoices": [
+      {"id": 5301, "customer": 9301, "number": "F-5301", "state": "PAID", "totalAmount": {"amount": 24900},
+       "rest": {"amount": 0}, "dueDate": "2026-11-01", "isCredited": false, "period": {"start": "2026-11-01", "end": "2026-11-30"}}
+    ]
+  }
+}

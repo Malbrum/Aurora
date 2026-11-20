@@ -1,0 +1,22 @@
+{
+  "synthetic": true,
+  "expected_kind": "other",
+  "thread": [
+    {
+      "id": "m1",
+      "from": "ukjent.d@example.invalid",
+      "to": ["post@roabadet.no"],
+      "subject": "Trukket uten grunn",
+      "date": "2026-11-17T11:20:00+00:00",
+      "body": "Hei, jeg ble trukket 499 kr av dere i går men har ikke vært medlem på over et år. Hva skjer? D"
+    }
+  ],
+  "brp": {
+    "members": [
+      {"id": 9401, "customerNumber": "SYN-9401", "firstName": "Annen", "lastName": "Person",
+       "email": "annen.person@example.invalid", "familyMembers": []}
+    ],
+    "subscriptions": [],
+    "invoices": []
+  }
+}

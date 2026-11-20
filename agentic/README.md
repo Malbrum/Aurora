@@ -28,7 +28,8 @@ og eventuelt flyttet hit.
 | `gmail.py` | ~80 | Gmail, bare GET |
 | `store.py` | ~60 | SQLite: tråder, forslag |
 | `config.py` | ~30 | innstillinger fra `.env.agentic` |
-| `main.py` | ~60 | CLI: `poll`, `show`, `replay` |
+| `main.py` | ~60 | CLI: `poll`, `show`, `replay`, `outcome` |
+| `eval.py` | ~40 | kjører alle fixtures, skriver TREFF/BOM per sak og treffprosent |
 
 ## Kjøre
 
@@ -36,6 +37,7 @@ og eventuelt flyttet hit.
 .venv/Scripts/python.exe -m agentic.main replay agentic/fixtures/faktura-etter-oppsigelse.json
 .venv/Scripts/python.exe -m agentic.main poll
 .venv/Scripts/python.exe -m agentic.main show
+.venv/Scripts/python.exe -m agentic.eval
 ```
 
 `replay` kjører agenten på en syntetisk tråd med syntetiske BRP-data, uten Gmail. Det er også
